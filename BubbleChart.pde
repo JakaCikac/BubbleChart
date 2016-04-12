@@ -2,7 +2,8 @@
 Author Jaka Cikac, based on //http://www.openprocessing.org/sketch/51382
  
  This code is meant to create a nice bubble chart visualization with 
- 4 dimensions (x axis, y axis, circle color and circle diameter).
+ 4 dimensions (x a
+ xis, y axis, circle color and circle diameter).
  
  Areas in comments like
  ------------------------
@@ -101,8 +102,6 @@ void setup() {
   plot.computeTickSpace(numTicksX, numTicksY);
 
   generateValues(plot.xspace, plot.yspace, plot.yaxislen);
-
-
   
 }
 
@@ -163,8 +162,6 @@ void generateValues(float xspace, float yspace, int yaxislen) {
     // Get values for x and y axis
     int x = row.getInt(xLabelText);
     int y = row.getInt(yLabelText);
-
-
 
     // Define COLOR data and RADIUS data, change if needed!!
     // ------------------------------------------
